@@ -13,6 +13,7 @@ export let homeAnchor: Writable<HTMLElement> = writable();
 export let workAnchor: Writable<HTMLElement> = writable();
 export let aboutAnchor: Writable<HTMLElement> = writable();
 export let testimonialAnchor: Writable<HTMLElement> = writable();
+export let contactAnchor: Writable<HTMLElement> = writable();
 
 export let imgPromises: Writable<Promise<string>[]>= writable([]); // Array of asynchronous image promises
 export let loadPageResolve: (value?: any) => void;

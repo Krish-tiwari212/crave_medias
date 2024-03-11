@@ -4,7 +4,7 @@
 	export let scrollContainer: HTMLElement;
 
 	import anime from "animejs";
-	import { homeAnchor, workAnchor, aboutAnchor, testimonialAnchor, loadPagePromise, isMobile } from "$lib/store";
+	import { homeAnchor, workAnchor, aboutAnchor, testimonialAnchor, loadPagePromise, isMobile, contactAnchor } from "$lib/store";
 	import { maskSlideIn } from "$lib/animations";
 	import { browser } from "$app/environment";
 
@@ -108,8 +108,13 @@
 						<li class="mobile">
 							<a href="mailto:info@cravemedias.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
 						</li>
-						<li use:introAnimation={{ delay: 1400 }}>
-							<a href="#" target="_blank" in:mobileTransitionSwitcher={{ delay: 400 }}>Contact</a>
+						<li use:introAnimation={{ delay: 1300 }}>
+							<button 
+								class="interactive clickable"
+								on:click={() => navigate($contactAnchor)} 
+								in:mobileTransitionSwitcher={{ delay: 300 }}>
+								Contact
+							</button>
 						</li>
 					{/key}
 				</ul>

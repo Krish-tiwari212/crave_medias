@@ -2,7 +2,7 @@
 
     import { onMount } from "svelte";
     import { letterSlideIn, maskSlideIn } from "$lib/animations";
-    import { loadPagePromise, siteDataFetch } from "$lib/store";
+    import { loadPagePromise, siteDataFetch, contactAnchor } from "$lib/store";
     import { onScrolledIntoView } from "$lib/utils";
     import type { SiteData } from "$lib/types";
 
@@ -66,6 +66,7 @@
 
     onMount(async () => {
         await loadPagePromise;
+        $contactAnchor = footerContainerElement;
         introAnimations();
     });
 
@@ -90,6 +91,22 @@
             <a class="button large-text" bind:this={fullEmailLinkElement} href="mailto:info@cravemedias.com" target="_blank">info@cravemedias.com</a>
         </div>
         
+        <div class="status-wrapper" style="margin-top: 2rem;">
+            <p class="large-text" bind:this={statusElement}>
+                Message us on Telegram
+            </p>
+            
+            <a class="button large-text" bind:this={fullEmailLinkElement} href="https://t.me/opposites" target="_blank">t.me/opposites</a>
+        </div>
+
+        <div class="status-wrapper" style="margin-top: 2rem;">
+            <p class="large-text" bind:this={statusElement}>
+                Call us
+            </p>
+            
+            <a class="button large-text" bind:this={fullEmailLinkElement} href="tel:+919990200700" target="_blank">+919990200700</a>
+        </div>
+
         <div class="credits-wrapper" bind:this={creditsElement}>
             <p class="year">© {currentYear}</p>
             <p class="credits">
