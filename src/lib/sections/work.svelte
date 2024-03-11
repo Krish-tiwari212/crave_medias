@@ -5,7 +5,7 @@
 	import { fade } from "svelte/transition";
 	import { ImageRenderer } from "$lib/effects/work-slider/renderer";
 	import { letterSlideIn, letterSlideOut, maskSlideIn, maskSlideOut, workImageIntro, workListIntro } from "$lib/animations";
-	import { isMobile, isWorkScroll, loadPagePromise, workAnchor, workItemsFetch, workScrollSpeed } from "$lib/store";
+	import { isMobile, isWorkScroll, loadPagePromise, workAnchor, workItemsFetch, workScrollSpeed, contactAnchor } from "$lib/store";
 	import { loadImage, onScrolledIntoView } from "$lib/utils";
 	import type { WorkData } from '$lib/types';
 
@@ -18,7 +18,7 @@
 	// Is user holding click
 	let isMouseDown: boolean = false;
 	isWorkScroll.subscribe(val => isMouseDown = val);
-
+	export let scrollContainer: HTMLElement;
 
 	let workContainer: HTMLElement;
 	let container: HTMLElement, listContainer: HTMLElement; // Containers for Three meshes
@@ -128,6 +128,12 @@
 		let title = letterSlideIn(node, { delay: 5, breakWord: false });
 		title.anime({
 			onComplete: () => breakTitleWords=true
+		});
+	}
+	function navigate(anchor: HTMLElement) {
+		scrollContainer.scrollTo({
+			top: anchor.offsetTop - (window.innerHeight / 5),
+			behavior: "smooth"
 		});
 	}
 
@@ -280,7 +286,7 @@
 						<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
 							<div class="links">
 								{#each data[currentActive].links as link}
-									<a href={link.link} target="_blank" class="button">{link.text}</a>
+									<a href="https://t.me/opposites" target="_blank" class="button">Contact Us</a>
 								{/each}
 							</div>
 						</div>
