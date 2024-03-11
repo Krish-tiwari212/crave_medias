@@ -5,7 +5,7 @@
 	import { fade } from "svelte/transition";
 	import { ImageRenderer } from "$lib/effects/work-slider/renderer";
 	import { letterSlideIn, letterSlideOut, maskSlideIn, maskSlideOut, workImageIntro, workListIntro } from "$lib/animations";
-	import { isMobile, isWorkScroll, loadPagePromise, workAnchor, testimonials, workScrollSpeed } from "$lib/store";
+	import { isMobile, isWorkScroll, loadPagePromise, testimonialAnchor, testimonials, workScrollSpeed } from "$lib/store";
 	import { loadImage, onScrolledIntoView } from "$lib/utils";
 	import type { TestimonialData } from '$lib/types';
 
@@ -110,7 +110,7 @@
 		$isMobile = gpuTier.isMobile!;
 
 		await loadPagePromise;
-		$workAnchor = workContainer;
+		$testimonialAnchor = workContainer;
 
 		listContainer.style.transform = "translate3d(0px, 0px, 0px)";
 
