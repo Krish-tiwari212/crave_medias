@@ -146,10 +146,9 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 
 	.content-wrapper
 		box-sizing: border-box
-		width: 50%
+		width: 100%
 		height: 100%
 		margin: 0 2vw
-		padding-right: 8vw
 		display: flex
 		flex-direction: column
 		justify-content: center
@@ -180,7 +179,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			@media only screen and (max-width: 750px)
 				&
 					width: 100%
-					margin-left: 5vw
+					margin-left: 1vw
 
 			&::before
 				content: ""
@@ -209,6 +208,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 	@media only screen and (max-width: 950px)
 		.profile-image
 			display: none
+			
 
 .horizontal-flex
 	display: flex
