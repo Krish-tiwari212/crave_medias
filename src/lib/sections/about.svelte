@@ -149,7 +149,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 		width: 50%
 		height: 100%
 		margin: 0 2vw
-		padding-right: 4vw
+		padding-right: 8vw
 		display: flex
 		flex-direction: column
 		justify-content: center
@@ -159,7 +159,9 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 
 		@media only screen and (max-width: 950px)
 			&
-				width: 80%
+				width: 90%
+				margin-right: 15vw
+
 
 				h1
 					font-size: 25vw !important
