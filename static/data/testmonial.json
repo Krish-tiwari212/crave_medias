@@ -1,0 +1,37 @@
+[
+    {
+        "review": "Crave Medias has been instrumental in boosting our online presence and driving leads through strategic social media marketing campaigns. Their team is highly professional, responsive, and innovative.",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "name": "John Clarke",
+        "designation": "Marketing Director",
+        "company": "Big Stream Ideas"
+      },
+      {
+        "review": "Working with Crave Medias was a game-changer for our business. Their expertise in website and app development helped us create user-friendly platforms that significantly improved our customer experience.",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "name": "Jade Smith",
+        "designation": "CEO",
+        "company": "Wright Solution"
+      },
+      {
+        "review": "We engaged Crave Medias for lead generation and were impressed by the results they delivered. Their tailored strategies and data-driven approach helped us attract high-quality leads and increase conversions.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhY2V8ZW58MHx8MHx8fDA%3D",
+        "name": "David Johnson",
+        "designation": "Sales Manager",
+        "company": "LLK Enterprises"
+      },
+      {
+        "review": "Crave Medias managed our ad campaigns with precision and creativity. They helped us reach our target audience effectively and achieve our marketing goals within budget. Highly recommended!",
+        "avatar": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8fDA%3D",
+        "name": "Emily Brown",
+        "designation": "Marketing Manager",
+        "company": "Oswald Industries"
+      },
+      {
+        "review": "The consultation provided by Crave Medias was invaluable in shaping our digital marketing strategy. Their insights and recommendations have helped us stay ahead of the competition and drive business growth.",
+        "avatar": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGZhY2V8ZW58MHx8MHx8fDA%3D",
+        "name": "Michael Lee",
+        "designation": "Founder & CEO",
+        "company": "Patrick Solutions"
+      }
+]

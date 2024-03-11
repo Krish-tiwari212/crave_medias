@@ -1,0 +1,133 @@
+[
+    {
+        "id": "lcml",
+        "title": "PR Articles",
+        "details": {
+            "description": "Craft compelling narratives tailored to your brand's vision, ensuring maximum visibility and positive reception in the media landscape.",
+            "summary": "PR Articles"
+        },
+        "date": "April 2022",
+        "roles": [
+            "Tailored Content Creation",
+            "Media Outreach and Distribution",
+            "Reputation Management",
+            "SEO Integration for Increased Visibility"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Contact Us",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "id": "v1",
+        "title": "GKP Optimization",
+        "details": {
+            "description": "Elevate your online presence with strategic optimization techniques, ensuring accurate and engaging representation on Google's Knowledge Panel.",
+            "summary": "GKP Optimization"
+        },
+        "date": "May 2021",
+        "roles": [
+            "Responsive and Mobile-Friendly Layouts",
+            "Content Management Systems (CMS) Integration",
+            "E-commerce Functionality (if needed)",
+            "Custom Design and Development"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Contact Us",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "id": "kic",
+        "title": "Website and app Building",
+        "details": {
+            "description": "From concept to launch, we design and develop intuitive, responsive websites that captivate audiences and drive conversions.",
+            "summary": "Website and app Building"
+        },
+        "date": "July 2019",
+        "roles": [
+            "UI/UX Designer",
+            "Mobile Developer w/ Flutter",
+            "Full-Stack Web Developer"
+        ],
+        "links": [
+            {
+                "type": "ios",
+                "text": "Contact Us",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "id": "grillzzy",
+        "title": "Social Media Management",
+        "details": {
+            "description": "Harness the power of social platforms with targeted content strategies, engagement tactics, and analytics to foster meaningful connections and drive brand growth.",
+            "summary": "Social Media Management"
+        },
+        "date": "Nov 2020",
+        "roles": [
+            "Content Strategy Development",
+            "Community Engagement and Interaction",
+            "Performance Tracking and Reporting",
+            "Crisis Management and Reputation Monitoring"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Contact Us",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "id": "slickscroll",
+        "title": "Consulting",
+        "details": {
+            "description": "Tap into our expertise for strategic guidance tailored to your unique goals, leveraging industry insights and best practices to optimize your business strategy.",
+            "summary": "Consulting"
+        },
+        "date": "March 2021",
+        "roles": [
+            "Comprehensive Business Analysis",
+            "Strategic Planning and Implementation",
+            "Performance Metrics Evaluation",
+            "Ongoing Support and Advisory Services"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Contact Us",
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "id": "ads",
+        "title": "Ad Campaigns",
+        "details": {
+            "description": "Drive impactful results with precision-targeted advertising campaigns across various platforms, maximizing reach and ROI to accelerate business growth.",
+            "summary": "Ad Campaigns"
+        },
+        "date": "March 2021",
+        "roles": [
+            "Target Audience Identification",
+            "Ad Creatives Design and Copywriting",
+            "A/B Testing and Optimization",
+            "Detailed Campaign Performance Analytics"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Contact Us",
+                "link": "#"
+            }
+        ]
+    }
+]
