@@ -84,7 +84,7 @@
 
         <div class="status-wrapper">
                 <p class="large-text" bind:this={statusElement}>
-                    Contact Us now to get started
+                    Send us a email to get started
                 </p>
                 
             <a class="button large-text" bind:this={fullEmailLinkElement} href="mailto:info@cravemedias.com" target="_blank">info@cravemedias.com</a>

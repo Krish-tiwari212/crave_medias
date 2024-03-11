@@ -388,7 +388,10 @@ h1
 					align-items: flex-start
 
 					h1.title
+						margin-left: 8vw
+						text-align: center
 						font-size: 16.5vw
+						margin-bottom: -5vh
 
 					.close-button-wrapper
 						position: absolute
@@ -403,7 +406,7 @@ h1
 				align-items: center
 				text-align: center
 				margin-top: 2vh
-				margin-left: 12vw
+				margin-left: 8vw
 				*
 					flex-grow: 1
 					flex-basis: 0
@@ -458,13 +461,8 @@ h1
 			@media only screen and (max-width: 750px)
 
 				.bottom-align
-					flex-direction: column
-					justify-content: flex-start
-					align-items: flex-start
-					gap: 1vh
-
 					p
-						font-size: 1.6vh !important
+						font-size: 2vh !important
 
 					.links
 						margin: 2vh 0

@@ -401,12 +401,11 @@ h1
 
 			@media only screen and (max-width: 750px)
 				.mid-align
-					flex-direction: column
-					justify-content: flex-start
-					align-items: flex-start
 
 					h1.title
 						font-size: 16.5vw
+						margin-left: -2vw
+
 
 					.close-button-wrapper
 						position: absolute
