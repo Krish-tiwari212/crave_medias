@@ -137,7 +137,7 @@
 
 
 <div id="content-container" class="work-click-area" bind:this="{ workContainer }">
-	<h1>Testimonials</h1>
+	<h1 style="margin-left: 20%;">Testimonials</h1>
 	<div class="content-wrapper" 
 		role="listbox"
 		tabindex="0"
