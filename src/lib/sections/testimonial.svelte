@@ -153,7 +153,7 @@
 			if (!gpuTier.isMobile) slider.animate();
 		} }}
 	>
-		<div class:mobile={$isMobile}>
+		<div class:mobile={true}>
 			<ul class="work-list" 
 				bind:this={listContainer} 
 				class:hold={isMouseDown}>

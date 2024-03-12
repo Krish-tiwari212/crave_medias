@@ -58,12 +58,17 @@ onMount(async () => {
 {#if loading} <Loader></Loader> {/if}
 
 <div id="scroll-frame" bind:this={scrollContainer}>
-	<!-- Top nav-bar and mobile nav-bar -->
-	<div id="nav-bar" bind:this={navBar}>
-		<NavComponent scrollContainer={scrollContainer}></NavComponent>
+	<div class="hom">
+		<video playsinline autoplay muted loop class="video">
+			<source src="/heroSectionAsset.mp4" type="video/mp4">
+		</video>
+		<!-- Top nav-bar and mobile nav-bar -->
+		<div id="nav-bar" bind:this={navBar}>
+			<NavComponent scrollContainer={scrollContainer}></NavComponent>
+		</div>
+		<!-- page sections -->
+		<HomeSection></HomeSection>
 	</div>
-	<!-- page sections -->
-	<HomeSection></HomeSection>
 	<WorkSection></WorkSection>
 	<AboutSection></AboutSection>
 	<Testimonial></Testimonial>
@@ -111,5 +116,17 @@ onMount(async () => {
 	position: fixed
 	top: 10vh
 	z-index: 100
+
+.hom
+	position: relative
+	overflow: hidden
+.hom video
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+	z-index: -1
 
 </style>

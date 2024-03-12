@@ -159,7 +159,7 @@
 			if (!gpuTier.isMobile) slider.animate();
 		} }}
 	>
-		<div class:mobile={$isMobile}>
+		<div class:mobile={true}>
 			<ul class="work-list" 
 				bind:this={listContainer} 
 				class:hold={isMouseDown}>
@@ -316,6 +316,8 @@ h1
 	flex-direction: column
 	cursor: grab
 	position: relative
+	overflow-x: auto
+
 
 	&.disabled
 		cursor: default !important
