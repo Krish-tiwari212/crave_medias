@@ -31,32 +31,6 @@
 
 		const animation = [{ strokeDashoffset: '0' }];
 
-		// Signature animation using svg stroke DashOffset
-		signaturePath1.animate(animation, {
-			duration: 1000,
-			delay: 500,
-			easing: 'cubic-bezier(.72,.3,.25,1)',
-			fill: 'forwards' 
-		});
-		signaturePath2.animate(animation, {
-			duration: 300,
-			delay: 1500,
-			easing: 'cubic-bezier(.47,.41,.26,1)',
-			fill: 'forwards' 
-		});
-		signaturePath3.animate(animation, {
-			duration: 200,
-			delay: 1800,
-			easing: 'cubic-bezier(.47,.41,.26,1)',
-			fill: 'forwards' 
-		});
-		signaturePath4.animate(animation, {
-			duration: 1000,
-			delay: 2000,
-			easing: 'cubic-bezier(.47,.41,.26,1)',
-			fill: 'forwards' 
-		});
-
 
 		// Animate background image
 		Object.assign(backgroundContainerElement.style, {
