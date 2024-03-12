@@ -69,10 +69,25 @@ onMount(async () => {
 		<!-- page sections -->
 		<HomeSection></HomeSection>
 	</div>
-	<WorkSection></WorkSection>
-	<AboutSection></AboutSection>
-	<Testimonial></Testimonial>
-	<Footer></Footer>
+	<div class="hom">
+		<video playsinline autoplay muted loop class="video" style="z-index: -20;">
+			<source src="/workSectionAsset.mp4" type="video/mp4">
+		</video>
+		<WorkSection></WorkSection>	
+	</div>
+	<div class="hom">
+		<video playsinline autoplay muted loop class="video">
+			<source src="/aboutSectionAsset.mp4" type="video/mp4">
+		</video>
+		<AboutSection></AboutSection>
+	</div>
+	<div class="hom">
+		<video playsinline autoplay muted loop class="video">
+			<source src="/testimonialSectionAsset.mp4" type="video/mp4">
+		</video>
+		<Testimonial></Testimonial>
+		<Footer></Footer>
+	</div>
 </div>
 
 

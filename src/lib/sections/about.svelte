@@ -95,7 +95,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			</li>
 			<li>
 				<div in:letterSlideIn={{ initDelay: 550 }}>
-					Built a network of more than 35 million followers
+					Built a network of more than 60 million followers
 				</div>
 			</li>
 			<li>
