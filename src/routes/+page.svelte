@@ -60,7 +60,7 @@ onMount(async () => {
 <div id="scroll-frame" bind:this={scrollContainer}>
 	<div class="hom">
 		<video playsinline autoplay muted loop class="video">
-			<source src="/heroSectionAsset.mp4" type="video/mp4">
+			<source src="/heroSectionAsset.webm" type="video/mp4">
 		</video>
 		<!-- Top nav-bar and mobile nav-bar -->
 		<div id="nav-bar" bind:this={navBar}>
