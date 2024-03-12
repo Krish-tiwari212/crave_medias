@@ -260,8 +260,11 @@
 					<div class="bottom-align">
 						<div>
 							<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
-								<p class="paragraph">
+								<p class="paragraph">"
+									<em>
 									{data[currentActive].review}
+									</em>
+									"
 								</p>
 							</div>
 						</div>
@@ -372,6 +375,7 @@ h1
 					word-wrap: break-word
 					white-space: normal
 					line-height: 100%
+					margin-left: 30%
 
 					&.breakTitleWords
 						display: inline-block
@@ -406,7 +410,7 @@ h1
 				align-items: center
 				text-align: center
 				margin-top: 2vh
-				margin-left: 8vw
+				margin-left: 10%
 				*
 					flex-grow: 1
 					flex-basis: 0
@@ -414,6 +418,7 @@ h1
 				p
 					font-size: 2vh
 					width: 65%
+					margin-left: 6vh
 
 				.roles 
 					display: flex
@@ -463,6 +468,7 @@ h1
 				.bottom-align
 					p
 						font-size: 2vh !important
+						margin-left: 0
 
 					.links
 						margin: 2vh 0
