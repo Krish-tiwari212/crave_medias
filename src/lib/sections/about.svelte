@@ -51,7 +51,7 @@
 			<h1 class="title" style="text-transform: none;" use:titleIn>
 				We're <br>Crave Medias
 			</h1>
-			<div in:maskSlideIn={{ duration: 1200, reverse: true, delay: 150 }}>
+			<div in:maskSlideIn|global={{ duration: 1200, reverse: true, delay: 150 }}>
 				<p class="paragraph">
 					Welcome to Crave Medias, where innovation meets impact in the dynamic world of digital strategy. We're not just another agency; we're your strategic partners in navigating the ever-evolving landscape of online presence and brand growth.
 
@@ -62,17 +62,17 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 				</p>
 			</div>
 			<div class="social-button-wrapper">
-				<div in:maskSlideIn={{ delay: 400, reverse: true }}>
+				<div in:maskSlideIn|global={{ delay: 400, reverse: true }}>
 					<span class="button"><a href="mailto:info@cravemedias.com" target="_blank" class="clickable sublink link">Email Us</a></span>
 				</div>
-				<div in:maskSlideIn={{ delay: 700, reverse: true }}>
+				<div in:maskSlideIn|global={{ delay: 700, reverse: true }}>
 					<span class="button"><a href="tel:+919990200700" target="_blank" class="clickable sublink link">Call Us</a></span>
 				</div>
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
 			{#await loadImage("assets/imgs/Profile-Photo.png") then src}
-				<img src="{src}" in:maskSlideIn={{ duration: 1200,
+				<img src="{src}" in:maskSlideIn|global={{ duration: 1200,
 					delay: 100,
 					reverse: true,
 					maskStyles: [
@@ -89,27 +89,27 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 	{#await sectionTwoPromise then _}
 		<ul class="list first">
 			<li class="list-title">
-				<div in:letterSlideIn={{ initDelay: 400 }}>
+				<div in:letterSlideIn|global={{ initDelay: 400 }}>
 					Achivements
 				</div>
 			</li>
 			<li>
-				<div in:letterSlideIn={{ initDelay: 550 }}>
+				<div in:letterSlideIn|global={{ initDelay: 550 }}>
 					Built a network of more than 60 million followers
 				</div>
 			</li>
 			<li>
-				<div in:letterSlideIn={{ initDelay: 650 }}>
+				<div in:letterSlideIn|global={{ initDelay: 650 }}>
 					Google Knowledge Panel Optimization Success Stories
 				</div>
 			</li>
 			<li>
-				<div in:letterSlideIn={{ initDelay: 750 }}>
+				<div in:letterSlideIn|global={{ initDelay: 750 }}>
 					Currently handling more than 300+ Successful pages
 				</div>
 			</li>
 			<li>
-				<div in:letterSlideIn={{ initDelay: 850 }}>
+				<div in:letterSlideIn|global={{ initDelay: 850 }}>
 					100+ Successful PR Campaigns
 				</div>
 			</li>

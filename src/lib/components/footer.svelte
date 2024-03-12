@@ -69,7 +69,6 @@
         $contactAnchor = footerContainerElement;
         introAnimations();
     });
-
 </script>
 
 

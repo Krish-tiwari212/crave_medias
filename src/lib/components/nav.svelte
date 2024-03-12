@@ -76,7 +76,7 @@
 							<button 
 								class="interactive clickable"
 								on:click={() => navigate($homeAnchor)} 
-								in:mobileTransitionSwitcher={{ delay: 200 }}>
+								in:mobileTransitionSwitcher|global={{ delay: 200 }}>
 								Home
 							</button>
 						</li>
@@ -84,7 +84,7 @@
 							<button 
 								class="interactive clickable"
 								on:click={() => navigate($workAnchor)} 
-								in:mobileTransitionSwitcher={{ delay: 250 }}>
+								in:mobileTransitionSwitcher|global={{ delay: 250 }}>
 								<p>Work</p>
 							</button>
 						</li>
@@ -92,7 +92,7 @@
 							<button 
 								class="interactive clickable"
 								on:click={() => navigate($aboutAnchor)} 
-								in:mobileTransitionSwitcher={{ delay: 300 }}>
+								in:mobileTransitionSwitcher|global={{ delay: 300 }}>
 								About
 							</button>
 						</li>
@@ -101,18 +101,18 @@
 							<button 
 								class="interactive clickable"
 								on:click={() => navigate($testimonialAnchor)} 
-								in:mobileTransitionSwitcher={{ delay: 300 }}>
+								in:mobileTransitionSwitcher|global={{ delay: 300 }}>
 								Testimonial
 							</button>
 						</li>
 						<li class="mobile">
-							<a href="mailto:info@cravemedias.com" target="_blank" in:mobileTransitionSwitcher={{ delay: 350 }}>Email</a>
+							<a href="mailto:info@cravemedias.com" target="_blank" in:mobileTransitionSwitcher|global={{ delay: 350 }}>Email</a>
 						</li>
 						<li use:introAnimation={{ delay: 1300 }}>
 							<button 
 								class="interactive clickable"
 								on:click={() => navigate($contactAnchor)} 
-								in:mobileTransitionSwitcher={{ delay: 300 }}>
+								in:mobileTransitionSwitcher|global={{ delay: 300 }}>
 								Contact
 							</button>
 						</li>

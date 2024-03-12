@@ -181,7 +181,7 @@
 								<div class="text-top-wrapper" class:hidden={currentActive >= 0 || isMouseDown}>
 									<p 
 										class="item-index"
-										in:maskSlideIn={{
+										in:maskSlideIn|global={{
 											delay: (i*30)+100,
 											reverse: true
 										}}>
@@ -193,7 +193,7 @@
 									<h1 
 										class="item-title" 
 										>
-										<span in:maskSlideIn={{
+										<span in:maskSlideIn|global={{
 											duration: 900, 
 											delay: (i*30)+300,
 											reverse: true 
@@ -205,7 +205,7 @@
 									<button 
 										class="button item-link interactive"
 										on:click={() => toggleActiveItem(i)}
-										in:maskSlideIn={{
+										in:maskSlideIn|global={{
 											duration: 900,
 											delay: (i*30)+450,
 											reverse: true
@@ -227,7 +227,7 @@
 					<div class="top-align">
 						<div class="wrapper">
 							<div class="index">
-								<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
+								<div in:maskSlideIn|global={{ reverse: true }} out:maskSlideOut|global>
 									{#if (currentActive < 9)}
 										{"0"+(currentActive+1)}
 									{:else}
@@ -235,9 +235,9 @@
 									{/if}
 								</div>
 							</div>
-							<span class="line" transition:fade></span>
+							<span class="line" transition:fade|global></span>
 							<h6 class="caption">
-								<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>{data[currentActive].details.summary}</div>
+								<div in:maskSlideIn|global={{ reverse: true }} out:maskSlideOut|global>{data[currentActive].details.summary}</div>
 							</h6>
 						</div>
 					</div>
@@ -245,7 +245,7 @@
 					<div class="mid-align">
 						<h1 class="title" 
 							use:titleSlide
-							out:letterSlideOut
+							out:letterSlideOut|global
 							class:breakTitleWords
 							on:introend={() => setTimeout(() => breakTitleWords = true, 100)}
 							on:outrostart={() => setTimeout(() => breakTitleWords = false, 100)}>
@@ -255,8 +255,8 @@
 						<button class="close-button-wrapper interactive" on:click={() => toggleActiveItem(currentActive)}>
 							<div 
 								class ="close-button"
-								in:maskSlideIn={{ reverse: true }} 
-								out:maskSlideOut>
+								in:maskSlideIn|global={{ reverse: true }} 
+								out:maskSlideOut|global>
 
 								&times;
 							</div>
@@ -265,7 +265,7 @@
 					
 					<div class="bottom-align">
 						<div>
-							<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
+							<div in:maskSlideIn|global={{ reverse: true }} out:maskSlideOut|global>
 								<p class="paragraph">
 									{data[currentActive].details.description}
 								</p>
@@ -273,17 +273,17 @@
 						</div>
 						<div class="roles">
 							<div class="wrapper">
-								<div in:maskSlideIn={{reverse: true}} out:maskSlideOut>
+								<div in:maskSlideIn|global={{reverse: true}} out:maskSlideOut|global>
 									<p class="descriptor">Features</p>
 								</div>
-								<ul in:maskSlideIn={{ reverse: true, delay: 100 }} out:maskSlideOut>
+								<ul in:maskSlideIn|global={{ reverse: true, delay: 100 }} out:maskSlideOut|global>
 									{#each data[currentActive].roles as role}
 										<li>{"+ " + role}</li>
 									{/each}
 								</ul>
 							</div>
 						</div>
-						<div in:maskSlideIn={{ reverse: true }} out:maskSlideOut>
+						<div in:maskSlideIn|global={{ reverse: true }} out:maskSlideOut|global>
 							<div class="links">
 								{#each data[currentActive].links as link}
 									<a href="https://t.me/opposites" target="_blank" class="button">Contact Us</a>
