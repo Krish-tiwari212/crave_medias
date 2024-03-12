@@ -195,6 +195,15 @@
 											{item.name}
 										</span>
 									</h1>
+									<p style="margin-top: -3rem;">
+										<span in:maskSlideIn={{
+											duration: 900, 
+											delay: (i*30)+300,
+											reverse: true 
+										}}>
+											{item.designation}, {item.company}
+										</span>
+									</p>
 
 									<button 
 										class="button item-link interactive"
@@ -535,6 +544,7 @@ h1
 					width: 100%
 					opacity: 0.5
 					height: 90%
+					filter: grayscale(50%)
 
 			&.ambient
 				height: 45vh
