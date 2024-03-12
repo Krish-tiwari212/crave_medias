@@ -45,6 +45,7 @@
         <div 
             class="loader-background"
             class:outro={loadingDone}></div>
+        <img src="assets/imgs/logo.svg" alt="" srcset="">
         <div 
             bind:this={loader}
             class="loader"
@@ -75,6 +76,13 @@
         height: 0.1rem
         width: 20rem
 
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -70%)
+            height: 20rem
+            width: 20rem
         .loader, .loader-background
             position: absolute
             top: 0

@@ -48,20 +48,6 @@
 <div id="content-container" class="about" bind:this={section1Element}>
 	{#await sectionOnePromise then _}
 		<div class="content-wrapper">
-		<div class="profile-image-1" use:addSlickScrollOffset>
-			{#await loadImage("assets/imgs/profile-photo.PNG") then src}
-				<img src="{src}" in:maskSlideIn={{ duration: 1200,
-					delay: 100,
-					reverse: true,
-					maskStyles: [
-						{ property: "width", value: "100%"},
-						{ property: "height", value: "100%"}
-					]
-				}} alt="Crave Medias" class="profile-pic">
-			{/await}
-		</div>
-		<div class="content-wrapper">
-			
 			<h1 class="title" style="text-transform: none;" use:titleIn>
 				We're <br>Crave Medias
 			</h1>
@@ -95,7 +81,6 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 					]
 				}} alt="Crave Medias" class="profile-pic">
 			{/await}
-		</div>
 		</div>
 	{/await}
 </div>
@@ -148,25 +133,17 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 	position: relative
 	padding-bottom: 5vh
 
+
+	@media only screen and (max-width: 950px)
+		flex-direction: column
+		padding: 0 8vw
+		margin-top: 30vh
+
 	.profile-image
 		width: 55%
 		overflow: hidden
 		margin-top: -40vh
 		position: relative
-
-		img
-			height: 80%
-			width: 90%
-			border-radius: 0.5vh
-			object-fit: cover
-
-	.profile-image-1
-		display: none
-		width: 95%
-		overflow: hidden
-		margin-top: -50vh
-		position: relative
-		margin-bottom: 50vh
 
 		img
 			height: 80%
@@ -190,6 +167,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			&
 				width: 90%
 				margin-right: 15vw
+				order: 1
 
 
 				h1
@@ -237,11 +215,9 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 
 	@media only screen and (max-width: 950px)
 		.profile-image
-			display: none
-		.profile-image-1
-			display: block
-		
-			
+			order:-1
+			width: 85%
+			margin-bottom: 60vh
 
 .horizontal-flex
 	display: flex
