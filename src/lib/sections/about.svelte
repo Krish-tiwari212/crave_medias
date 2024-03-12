@@ -71,7 +71,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
-			{#await loadImage("assets/imgs/profile-photo.PNG") then src}
+			{#await loadImage("assets/imgs/Profile-Photo.png") then src}
 				<img src="{src}" in:maskSlideIn={{ duration: 1200,
 					delay: 100,
 					reverse: true,
@@ -141,6 +141,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 
 	.profile-image
 		width: 55%
+		height: 100vh
 		overflow: hidden
 		margin-top: -40vh
 		position: relative
