@@ -8,7 +8,7 @@
         },
         "date": "April 2022",
         "roles": [
-            "Tailored Content Creation",
+            "Brand Reputation and Recognition management",
             "Media Outreach and Distribution",
             "Reputation Management",
             "SEO Integration for Increased Visibility"
@@ -30,10 +30,9 @@
         },
         "date": "May 2021",
         "roles": [
-            "Responsive and Mobile-Friendly Layouts",
-            "Content Management Systems (CMS) Integration",
-            "E-commerce Functionality (if needed)",
-            "Custom Design and Development"
+            "Brand Reputation and Recognition management",
+            "Building Trust",
+            "Brief Information"
         ],
         "links": [
             {
@@ -127,6 +126,27 @@
                 "type": "web",
                 "text": "Contact Us",
                 "link": "https://images.unsplash.com/photo-1553096442-8fe2118fb927?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            }
+        ]
+    },
+    {
+        "id": "ads",
+        "title": "Growth",
+        "details": {
+            "description": "Offering a comprehensive suite of growth services designed to propel your brand forward and maximize your potential",
+            "summary": "Growth"
+        },
+        "date": "March 2021",
+        "roles": [
+            "Building you Brand",
+            "Catering the Audience",
+            "Building Trust"
+        ],
+        "links": [
+            {
+                "type": "web",
+                "text": "Contact Us",
+                "link": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             }
         ]
     }

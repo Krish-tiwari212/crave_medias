@@ -2,7 +2,7 @@
 	
 import slickScroll from "slickscrolljs";
 import { onMount } from "svelte";
-import { imgPromises, loaderAnimationPromise, loadPageResolve, slickScrollInstance, workItemsFetch, siteDataFetch, testimonials } from "$lib/store";
+import { imgPromises, loaderAnimationPromise, loadPageResolve, slickScrollInstance, workItemsFetch, siteDataFetch, testimonials, testimonialAnchor } from "$lib/store";
 import { devMsg, fetchJsonData } from "$lib/utils";
 import HomeSection from "$lib/sections/home.svelte";
 import WorkSection from "$lib/sections/work.svelte";
@@ -69,25 +69,10 @@ onMount(async () => {
 		<!-- page sections -->
 		<HomeSection></HomeSection>
 	</div>
-	<div class="hom">
-		<video playsinline autoplay muted loop preload="none" class="video" style="z-index: -20;">
-			<source src="https://ik.imagekit.io/btzumqjb35/workSectionAsset.mp4?updatedAt=1710310252518" type="video/mp4">
-		</video>
 		<WorkSection></WorkSection>	
-	</div>
-	<div class="hom">
-		<video playsinline autoplay muted loop preload="none" class="video">
-			<source src="https://ik.imagekit.io/btzumqjb35/aboutSectionAsset.mp4?updatedAt=1710310269528" type="video/mp4">
-		</video>
 		<AboutSection></AboutSection>
-	</div>
-	<div class="hom">
-		<video playsinline autoplay muted loop preload="none" class="video">
-			<source src="https://ik.imagekit.io/btzumqjb35/testimonialSectionAsset.mp4?updatedAt=1710310231078" type="video/mp4">
-		</video>
 		<Testimonial></Testimonial>
 		<Footer></Footer>
-	</div>
 </div>
 
 

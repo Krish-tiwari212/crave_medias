@@ -44,8 +44,11 @@
 	
 
 </script>
-
-<div id="content-container" class="about" bind:this={section1Element}>
+<div class="hom" bind:this={section1Element}>
+	<video playsinline autoplay muted loop class="video">
+		<source src="https://ik.imagekit.io/btzumqjb35/heroSectionAsset.mp4?updatedAt=1710310255848" type="video/mp4">
+	</video>
+<div id="content-container" class="about">
 	{#await sectionOnePromise then _}
 		<div class="content-wrapper">
 			<h1 class="title" style="text-transform: none;" use:titleIn>
@@ -63,15 +66,15 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			</div>
 			<div class="social-button-wrapper">
 				<div in:maskSlideIn|global={{ delay: 400, reverse: true }}>
-					<span class="button"><a href="mailto:info@cravemedias.com" target="_blank" class="clickable sublink link">Email Us</a></span>
+					<span class="button"><a href="mailto:info@cravemedias.com" target="_blank" style="text-transform: none;" class="clickable sublink link">Email Us</a></span>
 				</div>
 				<div in:maskSlideIn|global={{ delay: 700, reverse: true }}>
-					<span class="button"><a href="tel:+919990200700" target="_blank" class="clickable sublink link">Call Us</a></span>
+					<span class="button"><a href="tel:+919990200700" target="_blank" style="text-transform: none;" class="clickable sublink link">Call Us</a></span>
 				</div>
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
-			{#await loadImage("https://ik.imagekit.io/btzumqjb35/Profile-Photo(1).png?updatedAt=1710310654736") then src}
+			{#await loadImage("https://ik.imagekit.io/btzumqjb35/Profile-Photo(2).png?updatedAt=1710331631914") then src}
 				<img src="{src}" in:maskSlideIn|global={{ duration: 1200,
 					delay: 100,
 					reverse: true,
@@ -115,6 +118,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			</li>
 		</ul>
 	{/await}
+</div>
 </div>
 
 
@@ -228,6 +232,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 	margin-top: 12vh
 	width: 100%
 	box-sizing: border-box
+	margin-bottom: 10vh
 
 	@media only screen and (max-width: 1080px)
 		flex-direction: column
@@ -262,5 +267,15 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 
 			img
 				height: 2.3vh
-
+.hom
+	position: relative
+	overflow: hidden
+.hom video
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+	z-index: -1
 </style>

@@ -123,7 +123,6 @@
 </div>
 
 
-
 <style lang="sass">
 
 @import "../consts.sass"
@@ -136,7 +135,6 @@
     flex-direction: row
     justify-content: space-between
     padding: 15vh 13vw
-    margin-top: 25vh
     box-sizing: border-box
 
     @media only screen and (max-width: 950px)

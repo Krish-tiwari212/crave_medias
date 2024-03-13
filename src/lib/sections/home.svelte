@@ -84,7 +84,7 @@
 		<div class="flex">
 			<div class="flex-wrapper first">
 
-				<img bind:this={logo} id="signature" class="h-signature" src="assets/imgs/logo.svg" alt="logo">
+				<img bind:this={logo} id="signature" class="h-signature" src="assets/imgs/logo-notext.svg" alt="logo">
 					
 			</div>
 			
@@ -98,7 +98,7 @@
 					</div>
 				</h1>
 				<div class="occupation mask">
-					<p class = "paragraph" bind:this={shortDetailsElement}>
+					<p class = "paragraph" style="white-space: nowrap;" bind:this={shortDetailsElement}>
 						Providing all the services that you crave for 
 					</p>
 				</div>

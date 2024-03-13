@@ -109,11 +109,11 @@
 							<a href="mailto:info@cravemedias.com" target="_blank" in:mobileTransitionSwitcher|global={{ delay: 350 }}>Email</a>
 						</li>
 						<li use:introAnimation={{ delay: 1300 }}>
+							
 							<button 
 								class="interactive clickable"
-								on:click={() => navigate($contactAnchor)} 
 								in:mobileTransitionSwitcher|global={{ delay: 300 }}>
-								Contact
+								<a href="https://linktr.ee/cravemedias">Contact</a>
 							</button>
 						</li>
 					{/key}

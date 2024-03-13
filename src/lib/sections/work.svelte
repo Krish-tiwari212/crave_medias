@@ -18,7 +18,6 @@
 	// Is user holding click
 	let isMouseDown: boolean = false;
 	isWorkScroll.subscribe(val => isMouseDown = val);
-	export let scrollContainer: HTMLElement;
 
 	let workContainer: HTMLElement;
 	let container: HTMLElement, listContainer: HTMLElement; // Containers for Three meshes
@@ -130,19 +129,15 @@
 			onComplete: () => breakTitleWords=true
 		});
 	}
-	function navigate(anchor: HTMLElement) {
-		scrollContainer.scrollTo({
-			top: anchor.offsetTop - (window.innerHeight / 5),
-			behavior: "smooth"
-		});
-	}
-
 </script>
 
 
 
-
-<div id="content-container" class="work-click-area" bind:this="{ workContainer }">
+<div class="hom" bind:this={workContainer}>
+	<video playsinline autoplay muted loop class="video">
+		<source src="https://ik.imagekit.io/btzumqjb35/workSectionAsset.mp4?updatedAt=1710332786483" type="video/mp4">
+	</video>
+<div id="content-container" class="work-click-area">
 	<h1 style="margin-left:15% ;">Our Services</h1>
 	<div class="content-wrapper" 
 		role="listbox"
@@ -248,7 +243,9 @@
 							out:letterSlideOut|global
 							class:breakTitleWords
 							on:introend={() => setTimeout(() => breakTitleWords = true, 100)}
-							on:outrostart={() => setTimeout(() => breakTitleWords = false, 100)}>
+							on:outrostart={() => setTimeout(() => breakTitleWords = false, 100)}
+							style="text-transform: none;"
+							>
 
 							{data[currentActive].title}
 						</h1>
@@ -296,7 +293,7 @@
 		{/if}
 	</div>
 </div>
-
+</div>
 
 <style lang="sass">
 
@@ -667,5 +664,15 @@ h1
 
 					.item-title
 						font-size: 4.5vh
-
+.hom
+	position: relative
+	overflow: hidden
+.hom video
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+	z-index: -1
 </style>

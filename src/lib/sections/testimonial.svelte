@@ -135,8 +135,11 @@
 
 
 
-
-<div id="content-container" class="work-click-area" bind:this="{ workContainer }">
+<div class="hom" bind:this={workContainer}>
+	<video playsinline autoplay muted loop class="video">
+		<source src="https://ik.imagekit.io/btzumqjb35/Untitled%20design(2).mp4?updatedAt=1710333135661" type="video/mp4">
+	</video>
+<div id="content-container" class="work-click-area">
 	<h1 style="margin-left: 15%;">Testimonials</h1>
 	<div class="content-wrapper" 
 		role="listbox"
@@ -283,7 +286,7 @@
 		{/if}
 	</div>
 </div>
-
+</div>
 
 <style lang="sass">
 
@@ -291,7 +294,8 @@
 @include textStyles()
 
 #content-container.work-click-area
-	margin-top: 30vh
+	margin-top: 20vh
+	margin-bottom: 20vh
 h1
 	margin-top:-2rem
 	margin-bottom:3rem
@@ -657,5 +661,16 @@ h1
 
 					.item-title
 						font-size: 4.5vh
+.hom
+	position: relative
+	overflow: hidden
+.hom video
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	object-fit: cover
+	z-index: -1
 
 </style>

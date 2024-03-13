@@ -14,12 +14,9 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/adapter-cloudflare": "^4.1.0",
-		"@sveltejs/enhanced-img": "^0.1.8",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/animejs": "^3.1.12",
-		"@types/node": "^20.11.26",
 		"@types/three": "^0.160.0",
 		"sass": "^1.69.7",
 		"svelte": "^4.2.7",
