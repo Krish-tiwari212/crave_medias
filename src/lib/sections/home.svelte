@@ -98,7 +98,7 @@
 					</div>
 				</h1>
 				<div class="occupation mask">
-					<p class = "paragraph" style="white-space: nowrap;" bind:this={shortDetailsElement}>
+					<p class = "paragraph" bind:this={shortDetailsElement}>
 						Providing all the services that you crave for 
 					</p>
 				</div>
@@ -117,8 +117,8 @@
 			</div>
 
 			<div class="parallax-wrapper home-back" bind:this={backgroundContainerElement}>
-				{#await loadImage("https://ik.imagekit.io/btzumqjb35/home.jpg?updatedAt=1710310324413") then src}
-					<img src="{src}" bind:this={backgroundImageElement} draggable="false" alt="Home Background" style="width:100%; height: 100%; object-fit: cover;">
+				{#await loadImage("assets/imgs/img.png") then src}
+					<img src="{src}" bind:this={backgroundImageElement} draggable="false" alt="Home Background" style="width:100%  ;height: 100%; object-fit: cover;">
 				{/await}
 			</div>
 		</div>
@@ -167,8 +167,18 @@
 				justify-content: flex-end
 
 			h1
-				font-weight: 400
+				font-family: sans-serif
+				font-weight: 300
 				text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+			
+			p
+				white-space: nowrap
+				font-size: 1.5rem
+				
+				@media only screen and (max-width: 750px)
+					&
+						white-space: normal
+						font-size: 1.3rem
 
 			.title-mask
 				overflow: hidden
