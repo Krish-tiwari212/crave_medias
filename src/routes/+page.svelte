@@ -60,7 +60,7 @@ onMount(async () => {
 <div id="scroll-frame" bind:this={scrollContainer}>
 	<div class="hom">
 		<video playsinline autoplay muted loop class="video">
-			<source src="/heroSectionAsset.mp4" type="video/mp4">
+			<source src="https://ik.imagekit.io/btzumqjb35/heroSectionAsset.mp4?updatedAt=1710310255848" type="video/mp4">
 		</video>
 		<!-- Top nav-bar and mobile nav-bar -->
 		<div id="nav-bar" bind:this={navBar}>
@@ -71,19 +71,19 @@ onMount(async () => {
 	</div>
 	<div class="hom">
 		<video playsinline autoplay muted loop preload="none" class="video" style="z-index: -20;">
-			<source src="/workSectionAsset.mp4" type="video/mp4">
+			<source src="https://ik.imagekit.io/btzumqjb35/workSectionAsset.mp4?updatedAt=1710310252518" type="video/mp4">
 		</video>
 		<WorkSection></WorkSection>	
 	</div>
 	<div class="hom">
 		<video playsinline autoplay muted loop preload="none" class="video">
-			<source src="/aboutSectionAsset.mp4" type="video/mp4">
+			<source src="https://ik.imagekit.io/btzumqjb35/aboutSectionAsset.mp4?updatedAt=1710310269528" type="video/mp4">
 		</video>
 		<AboutSection></AboutSection>
 	</div>
 	<div class="hom">
 		<video playsinline autoplay muted loop preload="none" class="video">
-			<source src="/testimonialSectionAsset.mp4" type="video/mp4">
+			<source src="https://ik.imagekit.io/btzumqjb35/testimonialSectionAsset.mp4?updatedAt=1710310231078" type="video/mp4">
 		</video>
 		<Testimonial></Testimonial>
 		<Footer></Footer>

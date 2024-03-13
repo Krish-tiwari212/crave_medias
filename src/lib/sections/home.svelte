@@ -117,7 +117,7 @@
 			</div>
 
 			<div class="parallax-wrapper home-back" bind:this={backgroundContainerElement}>
-				{#await loadImage("assets/imgs/home.jpg") then src}
+				{#await loadImage("https://ik.imagekit.io/btzumqjb35/home.jpg?updatedAt=1710310324413") then src}
 					<img src="{src}" bind:this={backgroundImageElement} draggable="false" alt="Home Background" style="width:100%; height: 100%; object-fit: cover;">
 				{/await}
 			</div>

@@ -71,7 +71,7 @@ What sets us apart? It's our unwavering commitment to your success. We don't jus
 			</div>
 		</div>
 		<div class="profile-image" use:addSlickScrollOffset>
-			{#await loadImage("assets/imgs/Profile-Photo.png") then src}
+			{#await loadImage("https://ik.imagekit.io/btzumqjb35/Profile-Photo(1).png?updatedAt=1710310654736") then src}
 				<img src="{src}" in:maskSlideIn|global={{ duration: 1200,
 					delay: 100,
 					reverse: true,
