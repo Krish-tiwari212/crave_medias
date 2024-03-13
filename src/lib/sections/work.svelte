@@ -283,7 +283,7 @@
 						<div in:maskSlideIn|global={{ reverse: true }} out:maskSlideOut|global>
 							<div class="links">
 								{#each data[currentActive].links as link}
-									<a href="https://t.me/opposites" target="_blank" class="button">Contact Us</a>
+									<a href="https://linktr.ee/cravemedias" target="_blank" class="button">Contact Us</a>
 								{/each}
 							</div>
 						</div>
