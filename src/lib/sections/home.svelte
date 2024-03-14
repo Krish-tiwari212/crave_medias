@@ -91,10 +91,10 @@
 			<div class="flex-wrapper second">
 				<h1 class = "title" style="text-transform: none;">
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord1Element}>Crave</div>
+						<div class="word" bind:this={titleWord1Element}>CR<img class="img-arrow" src="assets/imgs/arrow.svg" alt="" srcset="">VE</div>
 					</div><br> 
 					<div class="title-mask">
-						<div class="word" bind:this={titleWord2Element}>Medias</div>
+						<div class="word" bind:this={titleWord2Element}>MEDIAS</div>
 					</div>
 				</h1>
 				<div class="occupation mask">
@@ -162,12 +162,25 @@
 			flex-direction: column
 			justify-content: center
 
+			.img-arrow
+				width:12rem
+				margin-bottom: -2.5rem
+				margin-left: -2rem
+				margin-right: -4rem
+
+				@media only screen and (max-width: 750px)
+					&
+						width: 22vw
+						margin-top: 10vw
+						margin-bottom: -4vw
+						margin-left: -1rem
+						margin-right: -2rem
+				
 			&.second
 				margin-right: 5vw 
 				justify-content: flex-end
 
 			h1
-				font-family: sans-serif
 				font-weight: 300
 				text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
 			
