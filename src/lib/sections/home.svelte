@@ -117,7 +117,7 @@
 			</div>
 
 			<div class="parallax-wrapper home-back" bind:this={backgroundContainerElement}>
-				{#await loadImage("assets/imgs/img.png") then src}
+				{#await loadImage("https://images.unsplash.com/photo-1553884014-36a8cb70674f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") then src}
 					<img src="{src}" bind:this={backgroundImageElement} draggable="false" alt="Home Background" style="width:100%  ;height: 100%; object-fit: cover;">
 				{/await}
 			</div>
@@ -128,7 +128,7 @@
 
 
 <style lang="sass">
-
+	img
 @import "../consts"
 @include textStyles()
 
